@@ -1,0 +1,118 @@
+create database dwdts ;
+use dwdts ;
+create table anochk
+(Acode varchar(20),
+bno int(20),
+name varchar(30),
+post varchar(10) );
+select * from anochk ;
+create table sales
+(acode varchar(12),
+name varchar(25),
+date varchar(25),
+wcode varchar(25),
+qty int(10),
+price int(10) );
+select * from sales ;
+create table userpass
+(username varchar(30),
+Password varchar(30) );
+select * from userpass ;
+create table price
+(name varchar(100),
+price varchar(15) );
+select * from price ;
+create table purchse
+(sno int(5) unique,
+date varchar(25),
+acode varchar(10),
+name varchar(20),
+post varchar(20),
+wcode varchar(20),
+qty int(12),
+price int(12) );
+select * from purchse ;
+insert into userpass
+values('Mayank', 'mayank' );
+insert into userpass
+values('Amitsingh', 'amitraj001') ;
+insert into userpass values('Prakhar','alwar');
+insert into userpass values('guest','kvalwar')
+insert into anochk
+values('85b89', 856656, 'Mayank', 'FLTOFFR' );
+insert into anochk values('29p14',99999,'Prakhar','LFTMAJOR');
+insert into anochk values('11111',null,'guest','cadit');
+insert into price
+values('M67 FRAGMENTATION GRANADES', 5000);
+insert into price
+values('AN/M14 THERMITE GRANADES', 5400);
+insert into price
+values('AN/M8 WHITE SMOKE GRANADES', 5900);
+insert into price
+values('AN/M18 COLOURED SMOKE GRANADES', 6100);
+insert into price
+values('M100 GRANADE RIFLE ENTRY MUNITION(GREM)', 6200);
+insert into price
+values('M1911A1', 15000);
+insert into price
+values('M9 (BERETTA 92FS, 9*19MM)',15600 );
+insert into price
+values('M11 (SIG Sauer P228, 9*19MM )', 15900);
+insert into price
+values('M11 (MK 25 MOD 0 (SIG P226 MK25, 9*19MM)', 22000);
+insert into price
+values('MEU  ( SOC) PISTOLS(.45 ACP)', 20100);
+insert into price
+values('MARK 23 equipped with supresser and laser aiming module', 22000);
+insert into price
+values('HK45C with an extended threaded barrel', 23000);
+insert into price
+values('P11 UNDER WATER PISTOLS', 19000);
+insert into price
+values('M16A4, (5056*45mm NATO)', 44000);
+insert into price
+values('M14 SMUD', 44500);
+insert into price
+values('M16A2', 40600);
+insert into price
+values('M16A3', 42000);
+insert into price
+values('SCAR-H MK 17 MOD 0', 49000);
+insert into price
+values('XM29', 45000);
+insert into price
+values('AR-15/COLT MODEL 601/602', 32000);
+insert into price
+values('M870 MCS', 45000);
+insert into price
+values('M4 CABRINES', 56000);
+insert into price
+values('GUU-5/P', 52050);
+insert into price
+values('M231-FPW', 54800);
+insert into price
+values('HK 416', 72000);
+insert into price
+values('M2 CABRINES', 81500);
+insert into price
+values('THOMPSON LIGHT RIFLE', 60000);
+insert into price
+values('M72/A1/A2/A3/A4 LAW ANTITANK ROCKET LAUNCHERS(66mm)', 120000);
+insert into price
+values('M202 FLASH INCENDIARY ROCKET LAUNCHERS', 150000);
+insert into price
+values('M203/A1/A2/ GRANADES LAUNCHERS', 110000);
+insert into price
+values('FGM-148 JAVELIN', 350000);
+insert into price
+values('AT4 MULTI USE CRUDE BLASTERS', 280000);
+
+
+insert into purchse values(1,2014-02-05,'29p14','Prakhar','LFTMAJOR','M1811A1',5,75000);
+insert into purchse values(2, '2014-01-01', '85b89', 'Mayank', 'FLTOFFR', 'M67', 45, 225000 );
+insert into purchse values(4,2014-02-07,'29p14','Prakhar','LFTMAJOR','HK416',10,720000);
+insert into purchse values(3,2014-02-09,'85b89','Mayank','FLTOFFR','M1811A1',5,150000);
+insert into sales values('29p14','Prakhar',2014-02-07,'AR-15',10,320000);
+insert into sales values('85b89', 'Mayank', '2014-01-16', 'M2', 12, 978000) ;
+insert into sales values('85b89','Mayank',2014-02-08,'M1911',15,225000);
+insert into sales values('29p14','Prakhar',2014-02-09,'P11',10,190000);
